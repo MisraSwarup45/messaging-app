@@ -1,0 +1,164 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 90%;
+}
+
+
+.thread-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.thread {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.customer-message {
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-reply {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.reply-form {
+  margin-top: 10px;
+}
+
+.reply-form input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reply-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reply-form button:hover {
+  background-color: #0056b3;
+}
+
+.reply-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.reply-actions button:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.form-container input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-container button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .thread-list {
+    gap: 10px;
+  }
+
+  .thread {
+    padding: 15px;
+  }
+
+  .admin-reply {
+    padding: 8px;
+  }
+
+  .reply-actions button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .thread-list {
+    gap: 5px;
+  }
+
+  .thread {
+    padding: 10px;
+  }
+
+  .admin-reply {
+    padding: 5px;
+  }
+
+  .reply-actions button {
+    font-size: 12px;
+  }
+}
